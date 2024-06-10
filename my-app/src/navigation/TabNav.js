@@ -6,6 +6,7 @@ import { FontAwesome } from '@expo/vector-icons'; //para ponerles alguna fotito
 import StackHome from './StackHome';
 import NewPost from '../screens/NewPost'
 import MyProfile from '../screens/MyProfile'
+import Finder from '../screens/Finder'
 
 
 const Tab = createBottomTabNavigator()
@@ -30,6 +31,13 @@ export default class TabNav extends Component {
         <Tab.Screen 
         name='my-profile' 
         component={MyProfile}
+        options={{
+          headerShown:false
+        }}
+        />
+        <Tab.Screen 
+        name='finder' 
+        component={Finder}
         options={{
           headerShown:false
         }}

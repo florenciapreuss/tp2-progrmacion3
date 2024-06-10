@@ -1,10 +1,20 @@
-import {Text, view} from 'react-native';
-import Login from './src/screens/Login';
-import Home from './src/screens/Home';
-import Register from './src/screens/Register';
-import MainNav from './src/navigation/MainNav'
-export default function App(){
-    return (
-        <MainNav/>
-    )
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <Text>Open up App.js to start working on your app!</Text>
+      <StatusBar style="auto" />
+    </View>
+  );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});

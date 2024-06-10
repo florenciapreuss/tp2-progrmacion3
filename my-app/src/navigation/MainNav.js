@@ -14,19 +14,19 @@ export default class MainNav extends Component {
     return (
       <NavigationContainer>
         <Stack.Navigator>
+        <Stack.Screen 
+                name='login' 
+                component={Login} 
+                options={{
+                    headerShown: false
+                }} 
+            />
             <Stack.Screen 
             name='register' 
             component={Register}
             options={{
                 headerShown: false
             }} 
-            />
-            <Stack.Screen 
-                name='login' 
-                component={Login} 
-                options={{
-                    headerShown: false
-                }} 
             />
             <Stack.Screen
             options={{
